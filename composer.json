@@ -1,0 +1,8 @@
+{
+  "name": "boox/ws-import-assignment",
+  "minimum-stability": "dev",
+  "require": {
+    "ext-simplexml": "*",
+    "ext-pdo": "*"
+  }
+}

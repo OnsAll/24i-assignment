@@ -1,0 +1,19 @@
+version: "2.0"
+services:
+  ws-import:
+    build:
+      context: .
+      dockerfile: php-cli.dockerfile
+    volumes:
+      - .:/code
+
+  ws-database:
+    image: mariadb:10.0-xenial
+    environment:
+      - MYSQL_ROOT_PASSWORD=hunter2
+      - MYSQL_DATABASE=ws-import
+    volumes:
+      - "${PWD}/epg_schema.sql:/epg_schema.sql:"
+
+volumes:
+  db-data:
