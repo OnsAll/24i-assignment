@@ -1,4 +1,4 @@
-**⚠️ Please do not fork this repository, it will make it easy for other candidates to find your solution!**
+**⚠️ Please do not fork this repository, it will make it easy for other candidates to find your solution! ⚠️**
 
 # The Challenge
 Given the attached schema, feel free to edit the schema as you see fit for the purposes of this exercise.
