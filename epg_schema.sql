@@ -91,7 +91,7 @@ CREATE TABLE `service_livetv_schedule` (
   `updated_at` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
   `deleted_at` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`id`),
-  UNIQUE KEY `index_ext_schedule_id` (`ext_schedule_id`),
+  KEY `index_ext_schedule_id` (`ext_schedule_id`),
   UNIQUE KEY `index_channel_schedule` (`channel_id`,`start_time`,`end_time`),
   KEY `channel_id` (`channel_id`),
   KEY `program_id` (`program_id`),
